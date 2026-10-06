@@ -86,15 +86,15 @@
                 return false;
             }
 
-            TaskItem taska = list.Find(t => t.TaskID == taskID);
+            TaskItem taskRef = list.Find(t => t.TaskID == taskID);
 
-            if (taska != null)
+            if (taskRef != null)
             {
 
-                taska.IsCompleted = true;
+                taskRef.IsCompleted = true;
                 Console.WriteLine("\nTask marked as completed!\n");
-                string completedStatus = taska.IsCompleted ? "X" : " ";
-                Console.WriteLine($"[{completedStatus}] {taska.TaskID} - {taska.Title}");
+                string completedStatus = taskRef.IsCompleted ? "X" : " ";
+                Console.WriteLine($"[{completedStatus}] {taskRef.TaskID} - {taskRef.Title}");
                 return true;
 
             }
