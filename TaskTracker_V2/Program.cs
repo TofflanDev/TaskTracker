@@ -58,7 +58,6 @@ namespace TaskTracker_V2
                         break;
                     case 7:
                         return;
-                        break;
                     default:
                         Console.WriteLine("Invalid choice.");
                         break;
